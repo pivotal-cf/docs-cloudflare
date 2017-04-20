@@ -1,35 +1,63 @@
 ---
-title: Cloudflare Service Broker for PCF
+title: Cloudflare Service Broker for PCF (Beta)
 owner: Partners
 ---
 
-This documentation describes the Cloudflare Service Broker for PCF.
-The Cloudflare Service Broker for PCF registers a service broker on PCF and exposes teh free service plan on the Marketplace.
-Developers can provision domains on Cloudflare using the cf CLI.
+<style>
+    .note.warning {
+        background-color: #fdd;
+        border-color: #fbb
+    }
+    .note.warning:before {
+        color: #f99;
+    }
+</style>
+
+<p class="note warning">
+<strong>IMPORTANT: </strong>
+The Cloudflare Service Broker for Pivotal Cloud Foundry (PCF) tile is currently in beta and is intended for evaluation and test purposes only. Do not use this product in a PCF production environment.
+</p>
+
+This documentation describes Cloudflare Service Broker for PCF.
+The Cloudflare Service Broker for PCF tile registers a service broker with PCF and exposes the free service plan on the Marketplace. 
+Developers can provision domains on Cloudflare using the Cloud Foundry Command Line Interface (cf CLI) tool.
 
 ## <a id='overview'></a>Overview
 
-The Cloudflare Service Broker for PCF includes the following key features:
+Cloudflare Service Broker for PCF includes the following key feature:
 
-* Provisions a domain name on Cloudflare.
+* Provisions domain names on Cloudflare
 
 ## <a id="snapshot"></a>Product Snapshot
 
-<dl>
-<dt>Cloudflare Service Broker for PCF details:</dt>
-<dd><strong>Version</strong>: v0.0.4 </dd>
-<dd><strong>Release date</strong>: April 24, 2017</dd>
-<dd><strong>Software component version</strong>: v0.0.4</dd>
-<dd><strong>Compatible Ops Manager version(s)</strong>: v1.9.0</dd>
-<dd><strong>Compatible Elastic Runtime version(s)</strong>:v1.9.2</dd>
-<dd><strong>IaaS support:</strong> All IaaS are supported</dd>
-</dl>
+The following table provides version and version-support information about Cloudflare Service Broker for PCF:
+
+<table class="nice">
+    <th>Element</th>
+    <th>Details</th>
+    <tr>
+        <td>Version</td>
+        <td>v0.0.4</td>
+    </tr>
+    <tr>
+        <td>Release date</td>
+        <td>April 24, 2017</td>
+    </tr>
+    <tr>
+        <td>Compatible Ops Manager version(s)</td>
+        <td>v1.9.0</td>
+    </tr>
+    <tr>
+        <td>Compatible Elastic Runtime version(s)</td>
+        <td>v1.9.2</td>
+    </tr>
+</table>
 
 ## <a id="reqs"></a>Requirements
 
-Cloudflare Service Broker for PCF has the following requirements:
+Cloudflare Service Broker for PCF has the following requirement:
 
-+ You must have a Cloudflare account before using this service broker.  If you don't have one you can sign up [here](https://www.cloudflare.com/a/sign-up?utm_source=pi-pivotal&utm_medium=plugin&utm_campaign=pivotal&utm_content=signup_now).
++ A Cloudflare account. If you don't have one you can sign up [here](https://www.cloudflare.com/a/sign-up?utm_source=pi-pivotal&utm_medium=plugin&utm_campaign=pivotal&utm_content=signup_now).
 
 ## <a id="limitations"></a>Limitations
 
